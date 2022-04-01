@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Font-Awesome Icons Library -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- <h1>Hello, world!</h1> -->
+    <div class="container mt-5">
+      <div>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            class="form-control"
+            type="text"
+            id="name"
+            placeholder="Enter name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            class="form-control"
+            type="text"
+            id="email"
+            placeholder="Enter Email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input
+            class="form-control"
+            type="text"
+            id="company"
+            placeholder="Enter Company"
+          />
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select class="form-control" id="gender">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <!-- TEXTAREA -->
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <!-- CUSTOM FILE INPUT -->
+        <div class="custom-file">
+          <input type="file" id="myfile" class="custom-file-input" />
+          <label class="custom-file-label" for="myfile">Choose file</label>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <button class="btn btn-primary btn-block" type="submit">Submit</button>
+    </div>
+
+    <div class="container my-5">
+      <form class="form-inline">
+        <input
+          class="form-control mr-2"
+          type="text"
+          id="username"
+          placeholder="Enter username"
+        />
+        <input
+          class="form-control mr-2"
+          type="text"
+          id="password"
+          placeholder="Password"
+        />
+        <div class="form-check">
+          <label class="form-check-label mr-2">
+            <input type="checkbox" class="form-check-input" /> Remember me
+          </label>
+        </div>
+        <button class="btn btn-light" type="submit">Submit</button>
+      </form>
+    </div>
+    <br />
+    <br />
+    <!-- VALIDATION -->
+    <div class="container mx-5">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input class="form-control is-valid" type="text" id="username" />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input class="form-control is-invalid" type="text" id="password" />
+        <div class="invalid-feedback">Password not strong enough</div>
+      </div>
+      <div class="form-group">
+        <label for="password2">Confirm Password</label>
+        <input class="form-control is-invalid" type="text" id="password2" />
+        <div class="invalid-feedback">Password does not match</div>
+      </div>
+    </div>
+
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- popper Bootstrap dropdown require Popper. js (https://popper.js.org) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
